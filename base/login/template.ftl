@@ -68,10 +68,12 @@
                     </div>
                     <div class="col-md-10">
                         <h1 id="kc-page-title"><#nested "header"></h1>
+                        <div class="${properties.pcontrolLogo}"></div>
                     </div>
                 </div>
             <#else>
                 <h1 id="kc-page-title"><#nested "header"></h1>
+                <div class="${properties.pcontrolLogo}"></div>
             </#if>
         <#else>
             <#if displayRequiredFields>
@@ -144,7 +146,10 @@
           </#if>
         </div>
       </div>
-
+      <div id="kc-footer">
+         <div class="pcontrol-trademark-desc">${msg("pControlTrademarkDesc")}</div>
+         <a href="https://milestonegroup.com" target="_blank" class="pcontrol-trademark-url">${msg("pControlTrademarkUrl")}</a>
+      </div>
     </div>
   </div>
 </body>

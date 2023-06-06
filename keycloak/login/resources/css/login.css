@@ -1,5 +1,5 @@
 .login-pf body {
-    background: url("../img/keycloak-bg.png") no-repeat center center fixed;
+    background: url("../img/pcontrol_login_background.png") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
 }
@@ -219,6 +219,7 @@ div.kc-logo-text span {
     color: #ededed;
     overflow: visible;
     white-space: nowrap;
+    display: none;
 }
 
 #kc-header-wrapper {
@@ -626,6 +627,55 @@ ul#kc-totp-supported-apps {
     border-color: var(--pf-global--primary-color--100);
 }
 
+.pcontrol-form-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 428px;
+    justify-content: center;
+    border-top: 0;
+}
+
+#kc-page-title {
+    display: none;
+}
+
+.pcontrol_logo {
+    background-image: url("../img/pcontrol_logo.png");
+    background-size: cover;
+    display: block;
+}
+
+#kc-form-wrapper input[type=submit] {
+    width: 120px;
+    height: 49px;
+    background: #145EC3;
+    padding: 0px 16px;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.05rem;
+    margin: 0 auto;
+}
+
+.kc-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    color: #636D77;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: left;
+    left: 15px;
+}
+.kc-footer .pcontrol-trademark-url {
+    margin-left: 3px;
+    text-decoration: none;
+    color: #0d6efd;
+}
 /*phone*/
 @media (max-width: 767px) {
     .login-pf-page .card-pf {
